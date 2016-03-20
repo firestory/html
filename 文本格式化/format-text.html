@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>文本格式化</title>
+        <style>
+            table{
+                border: 1px solid #000;
+                width: 300px;
+                height: 300px;
+                border-collapse: collapse;
+                margin: 0px auto;
+            }
+            td{
+                border: 1px solid #000;
+                text-align: center;
+            }
+        
+        </style>
+    </head>
+
+    <body>
+    
+        
+<!--        
+一、文本 内容
+    字体的控制
+    1.指定字体：
+        font-family:"microsoft","arial","宋体" 顺序采用 没有就下一个
+    2.字体大小：
+        font-size
+    3.字体加粗
+        font-weight： 相当于<b><b/>
+    4.字体样式
+        斜体
+        font-style：normal/italic；
+        相当于<i><i/>
+    5小型大写字母
+        font-variant：normal/small-caps；
+        常见写法： font:font-size/line-heigh font-family
+    
+
+    文本的控制
+    1.颜色
+        color：rgba（255，0，0，alph）
+    2.文本排列
+        text-aline：left right center 水平对齐方式  一般只对行内元素有用
+        vertical-algn: top bottom middle baseline 文本内容垂直对齐方式（针对td）
+    3.文字修饰
+        text-decoration:none/underline
+        underline---下划线
+        overline---上划线
+        linethrough---删除线 <s><s/>
+    4.行高
+        行文本占据的高度 若高于文本  文本垂直居中显示
+        一般使用：将行高设置为容器高度
+    5.首行文本缩进
+        text-indent:value
+    6.文本阴影
+        text-shadow: h-shadow v-shadow blur color;
+    
+    文字溢出处理
+    1.处理空白
+        white-space:normal/nowrap;
+        配合overflow：hiden 对超出内容进行隐藏 从而保证元素的高度
+    2.文本溢出
+        overflow：hidden； 元素对溢出后的处理----重点在--元素--
+        text-overflow：clip/ellipsis    裁剪/隐藏显示“...”
+        注意：text-overflow要配合overflow：hidden； 先设置隐藏  然后设置隐藏的方式
+    3.长单词换行
+        Word-wrap：normal/break-word
+    4.文本换行
+        Word-break：norma/break-all/keep-all   正常/全换行/保证单词换行/
+
+二、表格属性
+    1.常用属性（标准属性
+      内编剧 尺寸 边框 背景 文本格式化 对齐 
+    2.表格特有属性
+        1.边框合并
+            border-collapse:separate/collapse           默认的 分离边框/边框的合并
+    3.标题位置
+        <caption>出现的位置
+        caption-side：top/bottom  出现在表格之上/之下
+    4.表格显示规则
+        table-layout：auto自动   fixed：由width决定
+        
+-->
+        <table>
+        
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        
+        
+        
+        
+        </table>
+        
+        
+    
+    </body>
+    
+</html>
+
