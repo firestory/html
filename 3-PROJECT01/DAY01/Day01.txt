@@ -1,0 +1,60 @@
+1、布局
+   1、页面顶部
+      京东收藏 、登录注册
+   2、LOGO 和 搜索框
+      LOGO图像、搜索框、热门搜索、我的京东、购物车
+   3、页面导航
+      全部商品分类   主导航
+   4、banner 部分
+      三洋帝度
+      大牌1折起
+      低至49元  
+      机票、彩票、电话费 ....
+   5、主体内容
+      生活的橱窗
+      1F
+      2F
+      3F
+      热门晒单
+   6、购物指南、配送方式
+   7、页面底部
+      关于我们
+      北京市公安局 。。。
+      四幅图像
+准备工作:
+通用样式：
+1、header,section,nav,aricle,footer : 边框
+   1px solid blackk
+2、body 常用样式
+   font : 12px "microsoft yahei","arial"
+   color:#666
+   margin :0
+   padding :0
+3、ul,li,p,h1-h6
+   取消：
+      margin
+      padding
+      border
+      列表样式 
+4、input
+   取消边框
+5、三个通用类
+   .lf{float:left;}
+   .rt{float:right;}
+   .clear{clear:both;}
+
+布局：
+   1、页面顶部 ：宽度 100%
+   2、其余内容 ：统一宽度 1211 px
+
+
+
+
+
+
+
+
+
+
+
+

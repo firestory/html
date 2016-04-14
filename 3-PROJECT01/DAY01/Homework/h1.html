@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8" />
+  <style>
+    /*通用样式*/
+	body{
+		font-size:12px;
+		color:#666;
+		font-family:Arial;
+	}
+	p,ul{
+		margin:0px;
+		padding:0px;
+		list-style:none;
+	}
+	/*布局*/
+	nav{
+		width:990px;
+		height:40px;
+		background-color:#E44144;
+		margin:10px auto;
+	}
+	#category{
+		width:210px;
+		background:#CD2A2C;
+		float:left;
+		height:40px;
+	}
+	/*全部商品分类*/
+	#category p a{
+		float:left;
+		height:40px;
+		line-height:40px;
+		padding-left:20px;
+		color:#fff;
+		font-size:14px;
+		font-weight:900;
+		text-decoration:none;
+	}
+	#category p b{
+		float:right;
+		width:20px;
+		height:20px;
+		background:url(Images/iconlist_2.png) no-repeat -65px 0;
+		margin-top:10px;
+		margin-right:5px;
+	}
+	/*页面主导航*/
+	#nav_items{
+		float:left;
+		list-style:none;
+	}
+	#nav_items li{
+		float:left;
+		width:80px;
+		height:40px;
+	}
+	#nav_items li a{
+		display:inline-block;
+		width:80px;
+		height:40px;
+		line-height:40px;
+		text-align:center;
+		color:#fff;
+		font-size:14px;
+		font-weight:bold;
+		text-decoration:none;
+	}
+	#nav_items li a:hover{
+		background-color:#BD2A2C;
+	}
+	/*详细分类*/
+	#category p{
+		overflow:hidden;
+	}
+	#cate_box{
+		
+		width:203px;
+		border:2px solid #e4393c;
+		border-top:none;
+		padding:4px 3px 4px 0;
+		
+		height:400px;
+		background-color:#FAFAFA;
+		/*修改为相对定位，配合 sub_cate_box的 出现位置*/
+		position:relative;
+	}
+	#cate_box>li{
+		border-bottom:1px solid #fff;
+	}
+	#cate_box>li h3{
+		margin:0px;
+		font-size:14px;
+		width:185px;
+		height:28px;
+		line-height:28px;
+		font-weight:normal;
+		padding-left:15px;
+	}
+	#cate_box>li h3 a{
+		color:#333;
+		text-decoration:none;
+	}
+	#cate_box>li:hover{
+		border-top:1px solid #ddd;
+		border-bottom:1px solid #ddd;
+		background-color:#fff;
+		z-index:6;
+	}
+	/*子分类*/
+	.sub_cate_box{
+		padding:5px;
+		width:705px;
+		height:400px;
+		border:1px solid #DDD;
+		position:absolute;
+		top:2px;
+		left:198px;
+		box-shadow:0 0 10px #ddd;
+		z-index:1;
+		background-color:#fff;
+	}
+	div.close{
+		position:absolute;
+		width:26px;
+		height:26px;
+		text-align:center;
+		line-height:26px;
+		background-color:#555;
+		color:#fff;
+		font-size:20px;
+		cursor:pointer;
+		top:0px;
+		right:-26px;
+	}
+	div.sub_cate_items{
+		float:left;
+		width:400px;
+		height:400px;
+		border:1px solid #ddd;
+	}
+	div.sub_cate_banner{
+		float:right;
+		width:200px;
+		padding:10px;
+		border:1px solid #ddd;
+	}
+	div.sub_cate_banner h4{
+		color:#e4393c;
+	}
+	div.sub_cate_banner li{
+		margin-bottom:5px;
+	}
+	div.sub_cate_banner li a{
+		color:#666;
+		text-decoration:none;
+	}
+	div.sub_cate_banner li a:hover{
+		text-decoration:underline;
+	}
+  </style>
+ </head>
+
+ <body>
+  <nav>
+	<div id="category">
+		<p>
+			<a href="#">全部商品分类</a>
+			<b></b>
+		</p>
+		<!-- 详细商品分类信息 -->
+		<ul id="cate_box">
+			<li>
+				<h3>
+					<a href="#">图书</a>、
+					<a href="#">音像</a>、
+					<a href="#">数字商品</a>
+				</h3>
+				<!-- 子分类 容器 -->
+				<div class="sub_cate_box">
+					<!-- 具体分类 -->
+					<div class="sub_cate_items">具体分类内容</div>
+					<!-- banner广告 -->
+					<div class="sub_cate_banner">
+						<div>
+							<img src="images/cate_banner_01.jpg" />
+						</div>
+						<div>
+							<img src="images/cate_banner_02.jpg" />
+						</div>
+						<div>
+							<h4>推荐品牌出版商/书店</h4>
+							<ul>
+								<li>
+								 <a href="#">中华书局</a>
+								</li>
+								<li>
+								 <a href="#">人民邮电出版社</a>
+								</li>
+								<li>
+								 <a href="#">上海世纪出版股份有限公司</a>
+								</li>
+								<li>
+								 <a href="#">电子工业出版社</a>
+								</li>
+								<li>
+								 <a href="#">三联书店</a>
+								</li>
+								<li>
+								 <a href="#">浙江少儿出版社</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 关闭 -->
+					<div class="close">x</div>
+				</div>
+			</li>
+			<li>
+				<h3>
+					<a href="#">家用电器</a>
+				</h3>
+			</li>
+		</ul>
+	</div>
+	<!-- 页面主导航 -->
+	<ul id="nav_items">
+		<li><a href="#">首页</a></li>
+		<li><a href="#">服装城</a></li>
+		<li><a href="#">食品</a></li>
+		<li><a href="#">团购</a></li>
+		<li><a href="#">夺宝岛</a></li>
+		<li><a href="#">闪购</a></li>
+		<li><a href="#">金融</a></li>
+	</ul>
+  </nav>
+
+ </body>
+</html>

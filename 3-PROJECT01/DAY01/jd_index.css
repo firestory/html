@@ -1,0 +1,250 @@
+/*通用属性*/
+nav,article,footer,section{
+	border:1px solid black;
+}
+body{
+	font:12px "microsoft yahei","arial";
+	color:#666;
+	margin:0px;
+	padding:0px;
+}
+p,ul,li,h1,h2,h3,h4,h5,h6{
+	margin:0px;
+	padding:0px;
+	border:none;
+	list-style:none;
+}
+input{
+	border:none;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+/*整体布局*/
+#top_box,#top_main,#nav,#banner,#main,#foot_box,#footer{
+	width:1211px;
+	margin:0px auto;
+}
+#top{
+	width:100%;
+	height:30px;
+	background-color:#F7F7F7;
+	line-height:30px;
+	border-bottom:1px solid #eee;
+}
+#top_box{
+	height:30px;
+}
+#top_main{
+	padding:15px 0;
+	overflow:hidden;
+}
+#nav{
+	height:40px;
+}
+#banner{
+	height:100px;
+}
+#main{
+	height:100px;
+}
+#foot_box{
+	height:173px;
+}
+#footer{
+	height:180px;
+}
+/*******************v02***************************/
+a{
+	color:#666;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+	color:#ff0700;
+}
+/*********顶部左侧的"收藏京东以及图像"************/
+#top_box>img{
+	float:left;
+	margin:9px 4px;
+}
+#top_box>a{
+	float:left;
+	line-height:30px;
+}
+/**************顶部右侧的链接菜单*********************/
+#top_box ul li{
+	float:left;
+	text-align:center;
+	margin-right:5px;
+	position:relative;
+	z-index:1;
+}
+#top_box ul li b{
+	border-left:1px solid #ddd;
+	padding-right:5px;
+}
+li.vip a{
+	padding-left:30px;
+	background:url(images/vip.jpg) no-repeat left center;
+}
+li.dakehu a{
+	padding-left:30px;
+	background:url(images/dakehu.jpg) no-repeat left center;
+}
+li.app_jd a{
+	display:inline-block;
+	height:26px;
+	padding-left:20px;
+	background:url(images/iconlist_2.png) no-repeat -126px -357px;
+}
+li.app_jd a:hover{
+	background-position:-126px -397px;
+}
+
+li.service>a{
+	display:inline-block;
+	height:26px;
+	padding:0px 15px;
+	background:url(images/jt_down.jpg) no-repeat 65px center;
+	border:1px solid transparent;
+}
+li.service>a:hover{
+	background-image:url(images/jt_up.jpg);
+	background-color:#fff;
+	border:1px solid #ddd;
+	border-bottom:none;
+	position:relative;
+	z-index:3;
+}
+/*top部分，"客户服务的弹出菜单"*/
+#service_items{
+	position:absolute;
+	border:1px solid #ddd;
+	border-top:none;
+	background-color:#fff;
+	box-shadow:0 0 10px #ddd;
+	z-index:2;
+	top:27px;
+	left:6px;
+}
+#service_items li{
+	padding-left:15px;
+}
+/********************V03***********************/
+/*搜索框*/
+#search_box{
+	width:510px;
+	padding:4px 80px 0px 40px;
+	position:relative;
+}
+div.search{
+	width:500px;
+	height:30px;
+	border:3px solid #e4393c;
+	background-color:#e4393c;
+}
+input.text{
+	width:405px;
+	padding:5px;
+	height:20px;
+	background-color:#fff;
+	line-height:20px;
+	color:#999;
+}
+input.button{
+	width:75px;
+	background-color:#e4393c;
+	font-size:14px;
+	color:#fff;
+	height:30px;
+	line-height:27px;
+	font-weight:700;
+}
+/*热门搜索*/
+div.hot_words{
+	color:#999;
+	height:18px;
+	overflow:hidden;
+}
+div.hot_words span,div.hot_words a{
+	color:#999;
+	margin-right:10px;
+}
+/*我的京东*/
+#my_jd{
+	width:65px;
+	height:30px;
+	line-height:30px;
+	background-color:#F7F7F7;
+	background-image:url(images/iconlist_2.png);
+	background-position:-116px -24px;
+	background-repeat:no-repeat;
+	padding:0 4px 0 25px;
+	border:1px solid #efefef;
+	text-align:center;
+	cursor:pointer;
+	margin-top:10px;
+}
+#my_jd b{
+	border-style:solid;
+	border-width:5px;
+	border-color:#ccc transparent transparent transparent;
+	position:relative;
+	top:10px;
+	right:-3px;
+}
+#my_jd:hover{
+	background-color:#fff;
+	background-position:-116px -54px;
+}
+/********************v04************************/
+#foot_box{
+	margin-top:12px;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #f1f1f1;
+}
+#foot_box p{
+	float:left;
+	width:40px;
+	height:40px;
+	margin:5px 5px 0px 55px;
+	background-image:url(images/iconlist_2.png);
+	background-repeat:no-repeat;
+}
+#foot_box ul{
+	width:140px;
+	float:left;
+}
+#foot_box ul li{
+	line-height:22px;
+}
+#foot_box ul li b{
+	line-height:30px;
+}
+#foot_box a:hover{
+	color:#ff0700;
+}
+
+/*p 元素的背景图*/
+p.shopping_guide{
+	background-position:0px -55px;
+}
+p.send_type{
+	background-position:-50px -55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
